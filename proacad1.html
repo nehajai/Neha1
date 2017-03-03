@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Merienda:400,700" rel="stylesheet">
+<script src="http://dash.ga.co/assets/jquery.js"></script>
+<style>
+body{
+font-family:"Comic Sans MS", cursive, sans-serif;
+background:#EEE8AA;
+margin:0 auto;
+max-width:645px;
+background-size: cover;
+}
+div{
+ height:340px;
+
+
+ background-size:cover;
+background-position:center;
+
+
+ position: relative;
+ margin: 40px 0px 0px 0px;
+ border-radius: 12px;
+}
+  h1{
+    font-family: 'Merienda', cursive;
+    text-align:center;
+    font-size: 65px;
+  text-shadow: 2px 2px 2px #bbb;
+  margin: 60px 0 0 0;
+  color:#aaaaa;
+  }
+  h2{
+    text-align:center;
+    margin: 0px 0 70px 0;
+    color: #aaaaa;
+  }
+  .second{
+
+   background: url("http://d21vu35cjx7sd4.cloudfront.net/dims3/MMAH/thumbnail/645x380/quality/90/?url=http%3A%2F%2Fs3.amazonaws.com%2Fassets.prod.vetstreet.com%2F76%2F5a%2F47656d6547e29b48f42c4fdf3fd0%2FHavanese-AP-6EGICI-645lc050913.jpg");
+  }
+  .first{
+
+   background: url("http://s3.amazonaws.com/assets.prod.vetstreet.com/a4/85c1209ea011e0a2380050568d634f/file/Chihuahua-Smooth-Coat-5-645mk062111.jpg");
+  }
+  .third{
+
+    background: url("http://d21vu35cjx7sd4.cloudfront.net/dims3/MMAH/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=http%3A%2F%2Fs3.amazonaws.com%2Fassets.prod.vetstreet.com%2F19%2F716f20a7f711e0a0d50050568d634f%2Ffile%2FPomeranian-2-645mk062811.jpg");
+  }
+  .fourth{
+
+    background: url("http://s3.amazonaws.com/assets.prod.vetstreet.com/24/697af0a7fa11e0a0d50050568d634f/file/Pug-2-645mk062811.jpg");
+  }
+  .fifth{
+
+    background: url("http://s3.amazonaws.com/assets.prod.vetstreet.com/66/4328509ea311e0a2380050568d634f/file/Dachshund-2-645mk062311.jpg");
+  }
+  .price{
+  float: right;
+  }
+  .show-description p{
+    height:120px;
+  }
+  .show-description small{
+    opacity:1;
+  }
+  @media (max-width: 500px)
+  {
+    h1{
+    font-size:50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2{
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div{
+    margin: 20px 12px 0 12px;
+  }
+  p{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small{
+    font-size: 16px;
+  }
+
+  }
+  p{
+    color:rgba(255,255,255,1);
+      background:rgba(0,0,0,.4);
+    background:-moz-linear-gradient(bottom,rgba(0,0,0,.8),rgba(0,0,0,.3));
+      background:-webkit-linear-gradient(bottom,rgba(0,0,0,.8),rgba(0,0,0,.3));
+        background:linear-gradient(bottom,rgba(0,0,0,.8),rgba(0,0,0,.3));
+    line-height:28px;
+    padding:10px;
+    text-align:justify;
+    position:absolute;
+    bottom:0;
+    margin: 0px;
+    height: 30px;
+    transition:height .5s;
+    -webkit-transition:height .5s;
+    -webkit-transition:height .5s;
+
+  }
+  small{
+    opacity: 0;
+  }
+</style>
+</head>
+<body>
+  <h1>Bark Streat</h1>
+<h2>Pet a  Dog</h2>
+
+<div class="first">
+
+<p>Chihuahua Puppies <span class="price">Rs.65,000</span><br /><small>The Chihuahua is a very individualistic breed. They are energetic, graceful, and display a human-like expression. Their life span is the longest of any size dog.</small>
+</p>
+</div>
+<div class="second">
+
+
+<p>Havanese Puppies  <span class="price">Rs.95,000</span><br />
+  <small>The coat on the Havanese should be brushed/combed thoroughly at least twice a week. Excess hair around the pads of the feet should be clipped.</small>
+</p>
+</div>
+<div class="third">
+
+<p>Pomeranian Puppies  <span class="price">Rs.80,000</span><br /><small>Coats are silky and long with a pointed face. It has distinct black nose and eyes. Two fold curvations in the tail.</small>
+</p>
+</div>
+<div class="fourth">
+
+<p>Pug Puppies  <span class="price">Rs.18,000</span><br /><small>Black muzzles with proper wrinkles in the forehead and two and a half fold curvations of tail. Nose is punched inside the wrinkles.</small>
+</p>
+</div>
+<div class="fifth">
+
+<p>Dachshund Puppies  <span class="price">Rs.45,000</span><br /><small>Dachshunds are a very clownish breed and can be very mischievous at times. A very intuitive dog, the Dachshund is now most commonly seen as a companion rather than a hunter.</small>
+</p>
+
+</div>
+<script>
+$('div').on('click', function(){
+  $(this).toggleClass('show-description');
+});
+
+</script>
+</body>
